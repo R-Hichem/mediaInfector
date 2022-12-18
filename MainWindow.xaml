@@ -5,16 +5,32 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:mediaInfector"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid Background="{DynamicResource {x:Static SystemColors.AppWorkspaceBrushKey}}">
-        <Button Content="Create file" HorizontalAlignment="Left" Margin="71,179,0,0" VerticalAlignment="Top" Height="66" Width="89" Click="Button_Click"/>
-        <Label Content="input File" HorizontalAlignment="Left" Margin="71,38,0,0" VerticalAlignment="Top" Height="26" Width="77"/>
-        <Label Content="input malucious File" HorizontalAlignment="Left" Margin="71,69,0,0" VerticalAlignment="Top" Height="26" Width="139"/>
-        <Label Content="output file Icon" HorizontalAlignment="Left" Margin="66,113,0,0" VerticalAlignment="Top" Height="26" Width="139"/>
-        <Label Content="output folder" HorizontalAlignment="Left" Margin="66,144,0,0" VerticalAlignment="Top" Height="26" Width="139"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="213,33,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.498,-0.067" Height="26" Width="85"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="210,74,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.498,-0.067" Height="26" Width="85"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="209,113,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.498,-0.067" Height="26" Width="86"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="210,144,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.498,-0.067" Height="26" Width="86"/>
+        Title="Media Infector" Height="629" Width="695" ResizeMode="NoResize" Background="#FF909090">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="161*"/>
+            <ColumnDefinition Width="162*"/>
+            <ColumnDefinition Width="107*"/>
+            <ColumnDefinition Width="265*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="80"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Label Content="Media Infector" Margin="10,10,0,0" VerticalAlignment="Top" Height="41" FontSize="30" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" ScrollViewer.VerticalScrollBarVisibility="Disabled" Padding="0,0,0,2" FontWeight="Bold" HorizontalAlignment="Left" Width="306" Grid.Row="3" Grid.ColumnSpan="2"/>
+        <Button Content="1. Sélectionner un fichier" Margin="0,56,0,0" VerticalAlignment="Top" Height="35" HorizontalAlignment="Center" Width="153" Grid.Row="3"/>
+        <Label Content="Aucun fichier sélectionné" Margin="3,56,0,0" Height="35" VerticalAlignment="Top" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" HorizontalAlignment="Left" Width="148" Grid.Row="3" Grid.Column="1"/>
+        <Label Content="2. Sélectionner un virus" Margin="10,96,0,0" VerticalAlignment="Top" Height="37" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="18" HorizontalAlignment="Left" Width="306" Grid.Row="3" Grid.ColumnSpan="2"/>
+        <ListBox Margin="10,138,0,0" Height="172" VerticalAlignment="Top" HorizontalAlignment="Left" Width="306" Grid.Row="3" Grid.ColumnSpan="2"/>
+        <Button Content="J'ajoute mon script" Height="34" Margin="10,315,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="306" Grid.Row="3" Grid.ColumnSpan="2"/>
+        <Label Content="3. Choisir mon icône" HorizontalAlignment="Left" Margin="10,354,0,0" VerticalAlignment="Top" Height="37" Width="306" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="18" Grid.Row="3" Grid.ColumnSpan="2"/>
+        <CheckBox Content="Icône par défaut" HorizontalAlignment="Left" Margin="2,396,0,0" VerticalAlignment="Top" Height="27" Width="153" IsChecked="True" VerticalContentAlignment="Center" Grid.Row="3" Grid.Column="1"/>
+        <Image Height="47" Margin="0,428,0,0" VerticalAlignment="Top" HorizontalAlignment="Center" Width="305" Grid.Row="3" Grid.ColumnSpan="2"/>
+        <Button Content="J'ajoute mon icône" HorizontalAlignment="Center" Margin="0,396,0,0" VerticalAlignment="Top" Width="153" Height="27" Grid.Row="3"/>
+        <Button Content="4. Choisir l'emplacement de sortie" Margin="10,483,0,0" VerticalAlignment="Top" Height="35" HorizontalAlignment="Left" Width="306" HorizontalContentAlignment="Center" ScrollViewer.VerticalScrollBarVisibility="Disabled" Grid.Row="3" Grid.ColumnSpan="2"/>
+        <Label Content="Aucun dossier sélectionné" Margin="12,523,0,0" Height="35" VerticalAlignment="Top" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Width="304" Grid.Row="3" Grid.ColumnSpan="2"/>
+        <Button Content="Générer le fichier" HorizontalAlignment="Left" Margin="12,282,0,0" Width="306" FontSize="24" FontWeight="Bold" IsEnabled="False" Height="30" VerticalAlignment="Top" Grid.Row="3" Grid.Column="2" Grid.ColumnSpan="2"/>
     </Grid>
 </Window>
