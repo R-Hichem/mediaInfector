@@ -7,34 +7,14 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid Background="{DynamicResource {x:Static SystemColors.AppWorkspaceBrushKey}}">
-        <Button VerticalContentAlignment="Center"  x:Name="button"  Content="Run PS Command" HorizontalAlignment="Left" Margin="10,106,0,0" VerticalAlignment="Top" Height="33" Width="213" FontSize="18" Click="Button_Click"/>
-        <TextBox
-
-         HorizontalScrollBarVisibility="Visible"
-
-         VerticalScrollBarVisibility="Visible"
-
-
-         TextAlignment="Left"
-
-         MaxLength="500"
-
-
-         AcceptsReturn="True"
-             x:Name="textbox" IsReadOnly="True" HorizontalAlignment="Left" Margin="306,47,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="406" Height="345"/>
-        <TextBox
-
-            HorizontalScrollBarVisibility="Visible"
-
-            VerticalScrollBarVisibility="Visible"
-
-
-            TextAlignment="Left"
-
-            MaxLength="500"
-
-
-            AcceptsReturn="True"
-            x:Name="commandTextIBoxInput"  HorizontalAlignment="Left" Margin="10,47,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="213" Height="54"/>
+        <Button Content="Create file" HorizontalAlignment="Left" Margin="71,179,0,0" VerticalAlignment="Top" Height="66" Width="89" Click="Button_Click"/>
+        <Label Content="input File" HorizontalAlignment="Left" Margin="71,38,0,0" VerticalAlignment="Top" Height="26" Width="77"/>
+        <Label Content="input malucious File" HorizontalAlignment="Left" Margin="71,69,0,0" VerticalAlignment="Top" Height="26" Width="139"/>
+        <Label Content="output file Icon" HorizontalAlignment="Left" Margin="66,113,0,0" VerticalAlignment="Top" Height="26" Width="139"/>
+        <Label Content="output folder" HorizontalAlignment="Left" Margin="66,144,0,0" VerticalAlignment="Top" Height="26" Width="139"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="213,33,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.498,-0.067" Height="26" Width="85"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="210,74,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.498,-0.067" Height="26" Width="85"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="209,113,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.498,-0.067" Height="26" Width="86"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="210,144,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.498,-0.067" Height="26" Width="86"/>
     </Grid>
 </Window>

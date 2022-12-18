@@ -8,8 +8,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="7-Zip.Extra" Version="9.20.0" />
     <PackageReference Include="Microsoft.PowerShell.SDK" Version="6.2.7" />
     <PackageReference Include="System.Management.Automation" Version="6.2.7" />
+    <PackageReference Include="System.Text.Encoding.CodePages" Version="7.0.0" />
   </ItemGroup>
 
 </Project>
